@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - master
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -19,8 +20,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          # Disabled npm Cache Setup: Removed the cache parameter to prevent lock file not found errors
+          node-version: 22
+
+      - name: Log Node.js Version
+        run: node --version
 
       - name: Install Dependencies
         run: npm install

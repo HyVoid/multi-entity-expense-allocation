@@ -177,7 +177,7 @@ export default function App() {
     const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(backupData, null, 2));
     const downloadAnchor = document.createElement('a');
     downloadAnchor.setAttribute("href", dataStr);
-    downloadAnchor.setAttribute("download", `invoice_allocation_backup_${new Date().toISOString().split('T')[0]}.json`);
+    downloadAnchor.setAttribute("download", `theseus-workshop-multi-entity-expense-allocation-backup-${new Date().toISOString().split('T')[0]}.json`);
     document.body.appendChild(downloadAnchor);
     downloadAnchor.click();
     document.body.removeChild(downloadAnchor);
@@ -212,10 +212,14 @@ export default function App() {
       {/* ── STICKY NAVIGATION BAR (56px high, white background, bottom border) ── */}
       <header className="sticky top-0 z-50 h-[56px] bg-white border-b border-border shadow-nav shrink-0">
         <div className="max-w-[1400px] h-full mx-auto px-10 flex items-center justify-between">
-          {/* Left Brand Identifier (Clean Minimalist text title) */}
+          {/* Left Brand Identifier: Theseus Workshop + multi-entity-expense-allocation */}
           <div className="flex items-center gap-3">
-            <span className="font-heading text-xl font-semibold tracking-tight text-primary">
-              Dynamic Invoice Allocation & Multi-Entity Cost Distribution Toolkit
+            <span className="font-heading text-xl font-bold tracking-tight text-primary">
+              Theseus Workshop
+            </span>
+            <span className="text-border/80 text-sm select-none font-light">/</span>
+            <span className="text-[12px] font-semibold text-muted tracking-wider uppercase">
+              multi-entity-expense-allocation
             </span>
           </div>
 
@@ -381,9 +385,9 @@ export default function App() {
 
       {/* ── FOOTER BAR ── */}
       <footer className="py-4 border-t border-border bg-white shrink-0">
-        <div className="max-w-[1400px] mx-auto px-10 flex justify-between items-center text-[11px] text-muted font-mono">
-          <span>Dynamic Invoice Allocation Calculator © 2026</span>
-          <span className="hidden sm:inline">Operational Ledger System</span>
+        <div className="max-w-[1400px] mx-auto px-10 flex flex-col sm:flex-row justify-between items-center gap-2 text-[12px] text-muted font-sans">
+          <span>Theseus Workshop · multi-entity-expense-allocation</span>
+          <span className="text-center sm:text-right">All data in this tool is stored in your browser's localStorage. The page itself does not retain any user data.</span>
         </div>
       </footer>
     </div>
