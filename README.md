@@ -38,6 +38,14 @@ This section maps specific finance job titles to their most common month-end rep
 - **Primary Search Intent:** *Multi-entity expense tracker Excel, wealth management cost allocation*
 - **Operational Scenario:** Standardizing the workflow to distribute overhead costs across multiple family trusts and legal entities before importing the final journal entries into the central ERP system.
 
+## Spreadsheet Preview
+
+Want to take a closer look before downloading? You can preview the spreadsheet in Google Sheets to explore its layout, structure, and calculation logic.
+
+**[View Spreadsheet Preview on Google Sheets](https://docs.google.com/spreadsheets/d/142rCNCOuT_lgfCH7yqEVDRUQXfb6qfHz/edit?usp=sharing&ouid=108770714531989318327&rtpof=true&sd=true)**
+
+> **Note on Compatibility:** The Google Sheets preview may display occasional `#NAME?` errors or formula warnings due to differences between Google Sheets and Microsoft Excel formula compatibility. These are preview-only compatibility issues and do not affect the functionality of the original Excel workbook. For the intended formula behavior and full functionality, please download and open the `.xlsx` file in Microsoft Excel.
+
 ---
 
 ## Financial Operations Pain Points & Automated Allocation Solutions
